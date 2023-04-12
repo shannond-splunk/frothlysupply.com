@@ -1,6 +1,0 @@
-#! /bin/sh 
-
-source /opt/signalfx-dotnet-tracing/defaults.env
-source /opt/signalfx-dotnet-tracing/createLogPath.sh
-
-./cartservice start
