@@ -15,8 +15,6 @@ node_modules
 .eclipse.buildship.core.prefs
 deploy.sh
 ./skaffold
-skaffold
-skaffold.yaml
 # ignore auto-generated k8s manifests
 release/*.yaml
 
