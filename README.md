@@ -4,27 +4,15 @@
 
 
 
-**Online Boutique** is a cloud-native microservices demo application.
-Online Boutique consists of a 10-tier microservices application. The application is a
+**Frothly Supply** is a cloud-native microservices application.
+Frothly Supply consists of a 10-tier microservices application. The application is a
 web-based e-commerce app where users can browse items,
 add them to the cart, and purchase them.
 
-**Google uses this application to demonstrate use of technologies like
-Kubernetes/GKE, Istio, Stackdriver, gRPC and OpenCensus**. This application
-works on any Kubernetes cluster (such as a local one), as well as Google
-Kubernetes Engine. It’s **easy to deploy with little to no configuration**.
-
-If you’re using this demo, please **★Star** this repository to show your interest!
-
-> 👓**Note to Googlers:** Please fill out the form at
-> [go/microservices-demo](http://go/microservices-demo) if you are using this
-> application.
-
-Looking for the old Hipster Shop frontend interface? Use the [manifests](https://github.com/GoogleCloudPlatform/microservices-demo/tree/v0.1.5/kubernetes-manifests) in release [v0.1.5](https://github.com/GoogleCloudPlatform/microservices-demo/releases/v0.1.5).
 
 ## Service Architecture
 
-**Online Boutique** is composed of many microservices written in different
+**Frothly Supply** is composed of many microservices written in different
 languages that talk to each other over gRPC.
 
 [![Architecture of
@@ -58,7 +46,7 @@ Find **Protocol Buffers Descriptions** at the [`./pb` directory](./pb).
   instrumented using OpenTelemetry trace interceptors for gRPC/HTTP.
 - **[Skaffold](https://skaffold.dev):** Application
   is deployed to Kubernetes with a single command using Skaffold.
-- **Synthetic Load Generation:** The application demo comes with a background
+- **Synthetic Load Generation:** The application comes with a background
   job that creates realistic usage patterns on the website using
   [Locust](https://locust.io/) load generator.
 
@@ -67,7 +55,7 @@ Find **Protocol Buffers Descriptions** at the [`./pb` directory](./pb).
 1. Make sure that you have access to a kubernetes cluster. It can be provisioned using 
    any cloud provider or you can setup a local cluster.
 
-   There are three options to run a **Kubernetes cluster locally** for this demo:
+   There are three options to run a **Kubernetes cluster locally**:
     - [Minikube (recommended)](https://kubernetes.io/docs/setup/minikube/). 
       Please, ensure that the local Kubernetes cluster has at least  4 CPU's and 4.0 GiB of memory.
       ```shell
@@ -167,17 +155,6 @@ If you've deployed the application with `skaffold run` command, you can run
 If you've deployed the application with `kubectl apply -f [...]`, you can
 run `kubectl delete -f [...]` with the same argument to clean up the deployed
 resources.
-
-## Conferences featuring Online Boutique
-
-- [Google Cloud Next'18 London – Keynote](https://youtu.be/nIq2pkNcfEI?t=3071)
-  showing Stackdriver Incident Response Management
-- Google Cloud Next'18 SF
-  - [Day 1 Keynote](https://youtu.be/vJ9OaAqfxo4?t=2416) showing GKE On-Prem
-  - [Day 3 – Keynote](https://youtu.be/JQPOPV_VH5w?t=815) showing Stackdriver
-    APM (Tracing, Code Search, Profiler, Google Cloud Build)
-  - [Introduction to Service Management with Istio](https://www.youtube.com/watch?v=wCJrdKdD6UM&feature=youtu.be&t=586)
-- [KubeCon EU 2019 - Reinventing Networking: A Deep Dive into Istio's Multicluster Gateways - Steve Dake, Independent](https://youtu.be/-t2BfT59zJA?t=982)
 
 ---
 
