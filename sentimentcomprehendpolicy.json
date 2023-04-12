@@ -1,0 +1,17 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowDetectActions",
+            "Effect": "Allow",
+            "Action": [
+                "comprehend:DetectEntities",
+                "comprehend:DetectKeyPhrases",
+                "comprehend:DetectDominantLanguage",
+                "comprehend:DetectSentiment",
+                "comprehend:DetectSyntax"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
