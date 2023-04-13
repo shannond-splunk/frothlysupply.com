@@ -59,6 +59,8 @@ build:
     context: src/userlookup
   - image: break-controller
     context: src/breakcontroller
+  - image: supplierservice
+    context: src/supplierservice
 
   tagPolicy:
     sha256: {}
